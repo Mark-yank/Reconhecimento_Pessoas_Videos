@@ -1,7 +1,7 @@
 # Yolov8
-Teste feito pelo lapisco para vaga de IA
+Trabalho feito como forma de seleção do laboratorio de analise de imagem no campus IFCE - Fortaleza
 
-O codigo(teste_lapisco) foi feito no google colab com base em algumas referencias, que estarão no final desse documento.
+O codigo Reconhecimento_de_imagem foi feito no google colab com base em algumas referencias, que estarão no final desse documento.
 O video_pessoas utilizado para a aplicação foi tirado do youtube e o video_resultado é a saida do programa, já com todas as alterações
 
 Foi a minha primeira interação com a ferramenta, existiram muitos problemas em relação as versões utilizadas do meu projeto(a mais atual para data:01/12/2023) e as de referências 
