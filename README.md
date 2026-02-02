@@ -1,23 +1,55 @@
-# Yolov8
-Trabalho feito como forma de seleção do laboratorio de analise de imagem no campus IFCE - Fortaleza
+# Reconhecimento e Contagem de Pessoas em Vídeo com YOLOv8
 
-O codigo Reconhecimento_de_imagem foi feito no google colab com base em algumas referencias, que estarão no final desse documento.
-O video_pessoas utilizado para a aplicação foi tirado do youtube e o video_resultado é a saida do programa, já com todas as alterações
+Este projeto realiza **detecção, identificação e contagem de pessoas em vídeos**
+utilizando o modelo **YOLOv8**, aplicado sobre frames de vídeo de forma automática.
+O sistema identifica apenas a classe *pessoa* e gera um novo vídeo anotado com
+caixas delimitadoras e contagem dos indivíduos detectados.
 
-Foi a minha primeira interação com a ferramenta, existiram muitos problemas em relação as versões utilizadas do meu projeto(a mais atual para data:01/12/2023) e as de referências 
+---
 
-# INFORMAÇÕES IMPORTANTE
-O codigo aceita receber outros video como entrada, se o video tiver na mesma pasta que o codigo. No colab, é importante de lembrar que precisa enviar o video para os arquivos( para acessa, use o icone de "pasta" do lado esquerdo).
+## Objetivo
 
-# REFERENCIAS PARA O CODIGO
+O objetivo do projeto é aplicar técnicas de **Visão Computacional e Deep Learning**
+para detectar e contar pessoas em vídeos, explorando modelos de detecção de objetos
+em tempo real e ferramentas modernas de anotação visual.
 
-Video utilizado: 
-  https://www.youtube.com/watch?v=LhotmQ8Skj0
+Esse trabalho foi feito como projeto da seleção do laboratório de analise de imagem do IFCE - Campus Fortaleza 
 
-videos de estudos da ferramenta e do supervision:
-  https://www.youtube.com/watch?v=l_kf9CfZ_8M&t=621s
-  https://www.youtube.com/watch?v=B48xtB8h1iw&t=350s
-  https://www.youtube.com/watch?v=FCm4hlc_DO0
+---
 
-link so supervision utilizado no teste:
-  https://supervision.roboflow.com/annotators/
+## Metodologia
+
+O pipeline do projeto segue os seguintes passos:
+
+1. Carregamento do vídeo de entrada
+2. Extração de frames do vídeo
+3. Detecção de objetos utilizando **YOLOv8**
+4. Filtragem da classe **0 (Pessoa)**
+5. Definição de uma área de interesse (ROI) para contagem
+6. Anotação dos frames com bounding boxes
+7. Geração de um vídeo final com as marcações
+
+---
+
+## Funcionalidades
+
+- Detecção de pessoas em vídeos
+- Filtragem de classes (apenas humanos)
+- Contagem de pessoas dentro de uma região definida
+- Geração de vídeo anotado como saída
+- Visualização do vídeo diretamente no notebook
+- Compatível com **Google Colab** e execução local
+
+---
+
+## Tecnologias Utilizadas
+
+- Python
+- PyTorch
+- YOLOv8 (Ultralytics)
+- Supervision
+- NumPy
+- OpenCV (indiretamente via bibliotecas)
+- Google Colab
+
+---
